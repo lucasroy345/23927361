@@ -1,1 +1,13 @@
+#include <stdio.h>
 
+int main() {
+    
+Float visitantes;
+
+    printf("Qual o número de visitantes que visitaram a empresa hoje?: ");
+    scanf("%f", &visitantes);
+
+    printf("Armazenamento concluído! %f visitantes registrados hoje.\n", visitantes);
+
+    return 0;
+}
