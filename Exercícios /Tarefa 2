@@ -1,0 +1,40 @@
+// Exercício A
+#include <stdio.h>
+
+int main() {
+    
+Float visitantes;
+
+    printf("Qual o número de visitantes que visitaram a empresa hoje?: ");
+    scanf("%f", &visitantes);
+
+    printf("Armazenamento concluído! %f visitantes registrados hoje.\n", visitantes);
+
+    return 0;
+}
+
+
+//Exercício B
+#include <stdio.h>
+
+int main() {
+    
+float receita, gasto, saldo;
+
+    printf("Digite o valor da receita: ");
+    scanf("%f", &receita);
+
+    printf("Digite o valor gasto: ");
+    scanf("%f", &gasto);
+
+    saldo = receita - gasto;
+
+    printf("Saldo atualizado: %.2f\n", saldo);
+
+    return 0;
+}
+
+
+
+
+
