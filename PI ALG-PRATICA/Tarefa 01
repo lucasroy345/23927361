@@ -1,0 +1,123 @@
+// teste de notas com numero inteiro:
+
+#include <stdio.h>
+
+int main()
+{
+   int nota1,nota2,nota3, media;
+   printf("digite sua nota 1:");
+   scanf("%d",&nota1);
+
+printf("digite sua nota 2:");
+   scanf("%d",&nota2);
+   
+   printf("digite sua nota 3:");
+   scanf("%d",&nota3);
+   
+   media = (nota1+nota2+nota3)/3;
+   
+   printf("Sua media eh:%d",media);
+   
+   return 0;
+   
+   
+   
+}
+
+
+
+
+// continuação da atividade 
+ 
+#include <stdio.h>
+
+int main()
+{
+   float nota1,nota2,nota3, media;
+   printf("digite sua nota 1:");
+   scanf("%f",&nota1);
+
+printf("digite sua nota 2:");
+   scanf("%f",&nota2);
+   
+   printf("digite sua nota 3:");
+   scanf("%f",&nota3);
+   
+   media = (nota1+nota2+nota3)/3;
+   
+   //normal
+   //printf("Sua media eh:%.2f",media); escolher as casa decimais pode usar g no lugar do 2f
+   
+   printf("Sua media eh:%f",media);
+   
+   return 0;
+}
+
+
+
+
+
+
+
+//parte 3
+
+
+#include <stdio.h>
+
+int main()
+{
+   float nota1,nota2,nota3;
+   printf("digite sua nota 1:");
+   scanf("%f",&nota1);
+
+printf("digite sua nota 2:");
+   scanf("%f",&nota2);
+   
+   printf("digite sua nota 3:");
+   scanf("%f",&nota3);
+   //aqui eu faço a media 
+   printf("Sua media é :%f",(nota1+nota2+nota3)/3);
+   
+   
+   //normal
+   //(nota1+nota2+nota3)/3) pra fazer sem a variavel da media 
+   //printf("Sua media eh:%.2f",media); escolher as casa decimais pode usar g no lugar do 2f
+   
+   
+   
+   return 0;
+   }
+
+
+
+
+// tarefa 4
+#include <stdio.h>
+
+int main()
+{
+   float nota1,nota2;
+   printf("digite dois numeros, digite o primeiro:");
+   scanf("%f",&nota1);
+   
+   printf("digite dois numeros, digite o segundo:");
+   scanf("%f",&nota2);
+   
+     printf("Sua soma é :%f\n",nota1+nota2);
+    
+     
+     printf("Sua subtração é :%f\n",nota1-nota2);
+     
+     printf("Sua multiplicação é :%f\n",nota1*nota2);
+     
+     printf("Sua divisão é :%f\n",nota1/nota2);
+    
+   
+   
+   
+   
+   return 0;
+   
+   
+   
+}
