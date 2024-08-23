@@ -1,0 +1,32 @@
+// teste de notas com numero inteiro:
+se else if 
+
+#include <stdio.h>
+
+int main()
+{
+   int nota1,nota2,nota3, media;
+   printf("digite sua nota 1:");
+   scanf("%d",&nota1);
+
+printf("digite sua nota 2:");
+   scanf("%d",&nota2);
+
+   printf("digite sua nota 3:");
+   scanf("%d",&nota3);
+
+   media = (nota1+nota2+nota3)/3;
+
+   if (media>=5){
+    printf("Sua media foi aprovada,%d",media);
+   }
+   if (media<=5){
+    printf("Sua media não foi aprovada,%d",media);
+   }
+
+
+   return 0;
+
+
+
+}
