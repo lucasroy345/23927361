@@ -1,0 +1,42 @@
+// teste de notas com numero inteiro:
+
+#include <stdio.h>
+
+int main()
+{
+   float nota1,nota2,nota3, media,falta;
+
+   printf("Digite sua quantidades de falta no semestre: ");
+   scanf("%d",&falta);
+
+    if(falta 10){
+    printf("Você foi reprovado!!");
+
+    }
+    if (falta 10){
+
+
+   printf("Você foi Aprovado!!\nDigite sua primeira nota:");
+    scanf("%d",&nota1);
+
+printf("digite sua nota 2:");
+   scanf("%d",&nota2);
+
+   printf("digite sua nota 3:");
+   scanf("%d",&nota3);
+
+   media = (nota1+nota2+nota3)/3;
+
+   if (media>=5){
+    printf("Sua media foi aprovada,%d",media);
+   }
+   if (media<=5){
+    printf("Sua media não foi aprovada,%d",media);
+   }
+
+    }
+
+
+   return 0;
+}
+
