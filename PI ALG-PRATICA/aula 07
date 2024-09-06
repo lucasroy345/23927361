@@ -1,0 +1,41 @@
+int main()
+{
+   float nota_trab,aval_semestre,exame,media;
+   printf("Digite sua nota do trabalho :");
+   scanf("%f",&nota_trab);
+
+printf("Digite sua nota de avaliação semestral:");
+   scanf("%f",&aval_semestre);
+
+   printf("Digite sua nota do exame final :");
+   scanf("%f",&exame);
+
+
+   media = (nota_trab*2+aval_semestre*3+exame*5)/10;
+
+printf("NOTAS\n");
+   printf("8,00 a 10,00 ==>A\n");
+    printf("7,00 a 7,99 ==>B\n");
+        printf("6,00 a 6,99 ==>C\n");
+               printf("5,00 a 5,99 ==>D\n");
+                      printf("0,00 a 4,99 ==>E\n");
+
+   if (media>=8 && media<=10){
+    printf("Você foi aprovada(o) com media A:,%d",media);
+   }
+   if (media>=7 && media<=7.99){
+    printf("Você foi aprovad(o) com media B:,%d",media);
+   }
+   if (media>=6 && media<=6.99){
+    printf("Você foi aprovada(o) com media C:,%d",media);
+   }
+
+   if (media>=5 && media<=5.99){
+    printf("Você foi aprovada(o) com media D:,%d",media);
+   }
+   else if(media<=4.99){
+   printf("Você foi reprovado(a) com media E:,%d",media);
+   }
+
+
+   return 0;
