@@ -1,3 +1,9 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+#include <stdio.h>
+#include <stdio.h>
+
 int main()
 {
    float nota_trab,aval_semestre,exame,media;
@@ -21,20 +27,20 @@ printf("NOTAS\n");
                       printf("0,00 a 4,99 ==>E\n");
 
    if (media>=8 && media<=10){
-    printf("Você foi aprovada(o) com media A:,%d",media);
+    printf("Você foi aprovada(o) com media A:,%.2f",media);
    }
    if (media>=7 && media<=7.99){
-    printf("Você foi aprovad(o) com media B:,%d",media);
+    printf("Você foi aprovad(o) com media B:,%.2f",media);
    }
    if (media>=6 && media<=6.99){
-    printf("Você foi aprovada(o) com media C:,%d",media);
+    printf("Você foi aprovada(o) com media C:,%.2f",media);
    }
 
    if (media>=5 && media<=5.99){
-    printf("Você foi aprovada(o) com media D:,%d",media);
+    printf("Você foi aprovada(o) com media D:,%.2f",media);
    }
    else if(media<=4.99){
-   printf("Você foi reprovado(a) com media E:,%d",media);
+   printf("Você foi reprovado(a) com media E:,%.2f",media);
    }
 
 
