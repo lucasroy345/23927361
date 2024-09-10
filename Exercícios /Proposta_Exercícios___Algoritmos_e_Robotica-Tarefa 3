@@ -39,7 +39,7 @@ return 0;
 }
 Colocar o & no scanf!
 2-
-a)
+A) Escreva um programa que leia três números e os imprima na ordem inversa da que foram digitados.
 #include <stdio.h>
 int main() {
     int num1, num2, num3;
@@ -57,7 +57,7 @@ int main() {
 
     return 0;
 }
-
+B) Escreva um programa para simular uma pequena conversa do computador com o usuário.
 b) 
 #include <stdio.h>
 
@@ -75,23 +75,40 @@ int main() {
 
     return 0;
 }
-C)
+C) Escreva um programa que pergunte o nome e a idade de um indivíduo e imprima (aproximadamente) quantos dias de vida ele possui.
 #include <stdio.h>
-
 int main() {
     char nome[50];
     int idade;
     int diasDeVida;
-
-    // Pergunta o nome e a idade
     printf("Qual é o seu nome?\n");
     fgets(nome, 50, stdin); // Lê o nome
 
     printf("Quantos anos você tem?\n");
     scanf("%d", &idade);
-
-    // Calcula o número de dias de vida aproximados
     diasDeVida = idade * 365; // Aproximadamente, desconsiderando anos bissextos
 
-    // Exibe o resultado
     printf("%sVocê tem aproximadamente %d
+
+D) Escreva um programa que pergunte qual o raio de um círculo e imprima a sua área.
+#include <stdio.h>
+#include <math.h> // Para a função M_PI e pow()
+
+int main() {
+    float raio;
+    float area;
+
+    // Pergunta o raio do círculo
+    printf("Qual é o raio do círculo?\n");
+    scanf("%f", &raio);
+
+    // Calcula a área do círculo
+    area = M_PI * pow(raio, 2); // M_PI é uma constante que representa o valor de π
+
+    // Exibe o resultado
+    printf("A área do círculo é: %.2f\n", area);
+
+    return 0;
+}
+
+
