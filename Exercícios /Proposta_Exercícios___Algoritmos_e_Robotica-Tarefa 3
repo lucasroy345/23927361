@@ -1,0 +1,97 @@
+1-
+
+a)	
+# include 
+< stdio .h >
+ 2 int main () { 
+3 int n = 4000000000;
+ 4 printf ("%u\n", n );
+ 5 return 0;
+No printf está usando ‘’D” de vez de “u”.
+
+b)
+# include
+ < stdio .h >
+ int main () {
+int a ; 
+printf ("%d\n", a ); 
+return 0; 
+ }
+Definir a variável “int” primeiro
+
+c)
+# include 
+< stdio .h > 
+ int main () {
+printf ("%d", 4); 
+printf ("%d", 2); 
+return 0; }
+Faltou definir as variáveis para atribuir o valor
+
+D) 
+# include 
+< stdio .h > 
+ int main () { 
+int a ; 
+scanf ("%d", &a ); 
+printf ("%d", a ); 
+return 0; 
+}
+Colocar o & no scanf!
+2-
+a)
+#include <stdio.h>
+int main() {
+    int num1, num2, num3;
+
+    printf("Digite o primeiro número: ");
+    scanf("%d", &num1);
+
+    printf("Digite o segundo número: ");
+    scanf("%d", &num2);
+
+    printf("Digite o terceiro número: ");
+    scanf("%d", &num3);
+
+    printf("Os números na ordem inversa são: %d %d %d\n", num3, num2, num1);
+
+    return 0;
+}
+
+b) 
+#include <stdio.h>
+
+int main() {
+    char nome[50];  // Variável para armazenar o nome do usuário
+
+    // Passo 1: Exibe a saudação inicial
+    printf("Olá, eu sou o Nº 1, como é seu nome?\n");
+
+    // Passo 2: Lê o nome do usuário
+    fgets(nome, 50, stdin);  // Lê o nome digitado, incluindo espaços
+
+    // Passo 3: Exibe a mensagem de boas-vindas
+    printf("Bem-vindo ao clube, %s", nome);
+
+    return 0;
+}
+C)
+#include <stdio.h>
+
+int main() {
+    char nome[50];
+    int idade;
+    int diasDeVida;
+
+    // Pergunta o nome e a idade
+    printf("Qual é o seu nome?\n");
+    fgets(nome, 50, stdin); // Lê o nome
+
+    printf("Quantos anos você tem?\n");
+    scanf("%d", &idade);
+
+    // Calcula o número de dias de vida aproximados
+    diasDeVida = idade * 365; // Aproximadamente, desconsiderando anos bissextos
+
+    // Exibe o resultado
+    printf("%sVocê tem aproximadamente %d
