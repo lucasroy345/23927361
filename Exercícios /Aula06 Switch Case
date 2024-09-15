@@ -46,3 +46,23 @@ int main()
     }
 
 //Shitch case 
+
+int main()
+{
+    switch(expressao)
+    
+    case constante1:
+    instrução1;
+    break;
+    
+    case contante2:
+    instrução2;
+    break;
+    
+    default;
+    instruçãoN;
+    
+
+    return 0;
+}
+formato !
