@@ -65,4 +65,45 @@ int main()
 
     return 0;
 }
-formato !
+//formato !
+
+
+//exemplo
+#include <stdio.h>
+int main() {
+float num1, num2;
+char escolha;
+// Exibir o menu de produtos
+
+printf("Digite o primeiro numero: ");
+scanf("%f", &num1);
+printf("Digite o segundo numero: ");
+scanf("%f", &num2);
+printf("Operações\n");
+printf("+\n");
+printf("-\n");
+printf("/ \n");
+printf("*\n");
+printf("Escolha uma das operações: ");
+scanf("%s", &escolha);
+
+switch (escolha) {
+case '+':
+printf("A soma e %.2f\n",num1 + num2);
+break;
+case '-':
+printf("A subtracao e %.2f\n",num1 - num2);
+break;
+case '/':
+printf("A divisão e %.2f\n",num1 / num2);
+break;
+case '*':
+printf("A multiplicacao e %.2f\n",num1 * num2);
+break;
+
+default:
+printf("Erro: Produto invalido.\n");
+break;
+}
+return 0;
+}
