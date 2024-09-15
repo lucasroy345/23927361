@@ -1,0 +1,48 @@
+#include <stdio.h>
+
+int main()
+{
+    
+    // Tabela de funcionários e seus reajustes 
+    
+    int cargo;
+    float salario_atual, reajuste_salario;
+    
+    printf ("Digite seu cargo:");
+    scanf("%d", &cargo);
+    
+    printf("Informe se atual salario R$:  ");
+    scanf("%f", &salario_atual);
+    
+    if (cargo==1){
+        
+        reajuste_salario = (salario_atual*7.0)/100;
+    }
+    
+    else if (cargo==2){
+       
+      reajuste_salario = (salario_atual*9.0)/100;  
+    }
+    
+     else if (cargo==3){
+       
+      reajuste_salario = (salario_atual*5.0)/100;  
+    }
+    
+     else if (cargo==4){
+       
+      reajuste_salario = (salario_atual*12.0)/100;  
+    }
+    
+    else{
+    printf("Nenhuma das opções foi escolhida !");
+    }
+    
+    printf("O reajuste é: R$%f\n",reajuste_salario);
+    printf("O valor total com reajuste é: R$%f\n",salario_atual+reajuste_salario);
+    
+    return 0;
+    
+    }
+
+//Shitch case 
