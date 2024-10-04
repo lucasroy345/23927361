@@ -1,0 +1,78 @@
+1) Escreva um algoritmo que imprima todas as possibilidades de que no lançamento de dois dados tenhamos o valor 7 como resultado da soma dos valores de cada dado.
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+int dado1,dado2,soma;
+soma = 7;
+printf("Lucas Rodrigues de Oliveira RA:23927361\n");
+printf("Combinações que resultam em %d:\n",soma);
+for(dado1=1; dado1 <=6; dado1++) {
+for(dado2=1; dado2 <=6; dado2++) {
+if( dado1 + dado2 == soma){
+printf("Dado1: %d, Dado2: %d\n",dado1,dado2);
+
+
+
+}
+}
+}
+return 0;
+
+}
+//2) Altere o exercício anterior para exibir os possíveis resultados de soma que o usuário desejar.
+#include <stdio.h>
+#include <stdlib.h>
+int main() {
+int dado1,dado2,soma;
+printf("Lucas Rodrigues de Oliveira RA:23927361\n");
+printf("Digite o valor da soma desejada\n");
+scanf("%d",&soma);
+printf("Combinações que resultam em %d:\n",soma);
+for(dado1=1; dado1 <=6; dado1++) {
+for(dado2=1; dado2 <=6; dado2++) {
+if( dado1 + dado2 == soma){
+printf("Dado1: %d, Dado2: %d\n",dado1,dado2);
+
+
+
+}
+}
+}
+return 0;
+
+}
+
+//3) Escreva um algoritmo que receba os números digitados pelo usuário, some os números negativos e faça a média dos números positivos. Se o usuário digitar 0, o algoritmo deve mostrar o resultado dos cálculos efetuados.
+Crie uma tabela de teste para validar o algoritmo.
+#include <stdio.h>
+
+int main() {
+    int numero;
+    int soma_negativos = 0;
+    int soma_positivos = 0;
+    int contador_positivos = 0;
+
+    printf("Digite os números (digite 0 para terminar):\n");
+
+    while (1) {
+        scanf("%d", &numero);
+
+        if (numero == 0) {
+            break; // Encerra o loop se o usuário digitar 0
+        } else if (numero < 0) {
+            soma_negativos += numero; // Soma os negativos
+        } else {
+            soma_positivos += numero; // Soma os positivos
+            contador_positivos++; // Conta os positivos
+        }
+    }
+
+    // Cálculo da média dos positivos
+    double media_positivos = (contador_positivos > 0) ? (double)soma_positivos / contador_positivos : 0;
+
+    // Exibir resultados
+    printf("Soma dos números negativos: %d\n", soma_negativos);
+    printf("Média dos números positivos: %.2f\n", media_positivos);
+
+    return 0;
+}
